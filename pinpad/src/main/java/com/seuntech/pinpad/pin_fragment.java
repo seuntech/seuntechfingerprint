@@ -427,6 +427,7 @@ public abstract class pin_fragment extends Fragment implements View.OnClickListe
     }
 
     protected void onPinOk() {
+        managePin.set_LastActivetime();
         onPinSuccess(pintattempt++);
     }
 

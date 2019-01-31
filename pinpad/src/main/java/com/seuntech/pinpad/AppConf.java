@@ -15,6 +15,7 @@ public abstract class AppConf {
 
     public static final String AUTH_TYPE = "type";
     public static boolean HIDE_BAR = false;
+    public static int TIME_OUT = 600;//ten minutes
 
 
 

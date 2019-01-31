@@ -435,6 +435,7 @@ public abstract class pin_activity extends AppCompatActivity implements View.OnC
     }
 
     protected void onPinOk() {
+        managePin.set_LastActivetime();
         onPinSuccess(pintattempt++);
         pintattempt = 1;
         Thread thread = new Thread() {

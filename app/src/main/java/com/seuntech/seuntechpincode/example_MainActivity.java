@@ -45,23 +45,25 @@ public class example_MainActivity extends AppCompatActivity {
         AppConf.HIDE_BAR = true;
         if (!Mp.isPinSet()) {
             Intent intent = new Intent(this, example_custom_activity.class);
-            intent.putExtra(AppConf.AUTH_TYPE, AppConf.AUTH_PIN);
+            intent.putExtra(AppConf.AUTH_TYPE, AppConf.CREATE_PIN);
             startActivityForResult(intent, SUCCESS_REQUEST);
         } else {
             Intent intent = new Intent(this, example_custom_activity.class);
-            intent.putExtra(AppConf.AUTH_TYPE, AppConf.AUTH_PIN);
+            intent.putExtra(AppConf.AUTH_TYPE, AppConf.CREATE_PIN);
             startActivityForResult(intent, SUCCESS_REQUEST);
         }
     }
 
     //Fragment Example
     public void frag(View v) {
-        Fragment fragment = new example_custom_fragment();
-        Bundle bundle = new Bundle();
-        bundle.putString(AppConf.AUTH_TYPE, AppConf.AUTH_PIN);
-        fragment.setArguments(bundle);
-        FragmentManager fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.frame_container, fragment).addToBackStack("pin").commit();
+        if(Mp.isTimeout()) {
+            Fragment fragment = new example_custom_fragment();
+            Bundle bundle = new Bundle();
+            bundle.putString(AppConf.AUTH_TYPE, AppConf.AUTH_PIN);
+            fragment.setArguments(bundle);
+            FragmentManager fragmentManager = getFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.frame_container, fragment).addToBackStack("pin").commit();
+        }
     }
 
 

@@ -3,6 +3,8 @@ package com.seuntech.pinpad;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.util.Log;
+import android.widget.Toast;
 
 /**
  * Created by seuntech on 1/29/2019.
@@ -13,8 +15,10 @@ public class ManagePin<T extends pin_activity> {
     private SharedPreferences prefs;
     private static ManagePin PinInstance;
     private static AppConf appcall;
+    static Context c;
 
     public static ManagePin getInstance(Context context) {
+        c = context;
         synchronized (ManagePin.class) {
             if (PinInstance == null) {
                 PinInstance = new ManagePin(context);
@@ -43,6 +47,43 @@ public class ManagePin<T extends pin_activity> {
         editor.putString("STPIN", "");
         editor.apply();
     }
+
+
+
+    public long get_LastActivetime(){
+        Long defaultValue = 0l;
+        return prefs.getLong("timeout", defaultValue);
+    }
+
+
+    public void set_LastActivetime(){
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putLong("timeout", System.currentTimeMillis());
+        editor.apply();
+    }
+
+
+
+    public boolean isTimeout(){
+
+        long lastActiveMillis = get_LastActivetime();
+        long passedTime = System.currentTimeMillis() - lastActiveMillis;
+
+        Toast.makeText(c, String.valueOf(lastActiveMillis)+"_"+String.valueOf(System.currentTimeMillis())+"_"+String.valueOf(passedTime), Toast.LENGTH_SHORT).show();
+
+        long timeout = (AppConf.TIME_OUT*1000);
+        if (lastActiveMillis > 0 && passedTime >= timeout) {
+
+            return  true;
+        }else {
+            set_LastActivetime();
+        }
+
+        return false;
+    }
+
+
+
 
     public String getPin() {
         return prefs.getString("STPIN", "u");
