@@ -221,7 +221,6 @@ Method:
 ```
 //You must initialise ManagePin first
 ManagePin Mp = ManagePin.getInstance(this);
-
 ```
 
 

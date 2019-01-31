@@ -69,8 +69,6 @@ public class ManagePin<T extends pin_activity> {
         long lastActiveMillis = get_LastActivetime();
         long passedTime = System.currentTimeMillis() - lastActiveMillis;
 
-        Toast.makeText(c, String.valueOf(lastActiveMillis)+"_"+String.valueOf(System.currentTimeMillis())+"_"+String.valueOf(passedTime), Toast.LENGTH_SHORT).show();
-
         long timeout = (AppConf.TIME_OUT*1000);
         if (lastActiveMillis > 0 && passedTime >= timeout) {
 
