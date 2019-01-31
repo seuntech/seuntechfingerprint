@@ -1,5 +1,32 @@
 apply plugin: 'com.android.application'
 
+ext {
+    // Library
+    LIBRARY_NAME = 'seuntechfingerprint'
+    PUBLISH_GROUP_ID = 'com.github.seuntech'
+    PUBLISH_ARTIFACT_ID = LIBRARY_NAME.toLowerCase()
+    PUBLISH_VERSION = '2.0.0'
+
+    // Bintray
+    BINTRAY_REPO = 'maven'
+    LIBRARY_DESC = 'Enable user to use searchview look like Google Play Store, …'
+
+    // Github
+    GIT_REPO_URL = 'https://github.com/seuntech/seuntechfingerprint'
+    GIT_VCS_URL  = GIT_REPO_URL + '.git'
+    GIT_USER_REPO_NAME = 'seuntech/seuntechfingerprint'
+
+    // Developer Info
+    DEVELOPER_ID = 'chivorns'
+    DEVELOPER_NAME = 'seuntech'
+    DEVELOPER_EMAIL = 'seuntech@gmail.com'
+
+    // Licence
+    LICENSE_NAME = 'The Apache Software License, Version 2.0'
+    LICENSE_URL = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    ALL_LICENSES = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -7,7 +34,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
-        versionName "1.0"
+        versionName PUBLISH_VERSION
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -17,6 +44,9 @@ android {
         }
     }
     productFlavors {
+    }
+    lintOptions {
+        abortOnError false
     }
 }
 
@@ -28,3 +58,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:0.5'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
 }
+
+apply from: 'https://raw.githubusercontent.com/Chivorns/publish-android-library-plugin/master/publish_lib_v1.gradle'
