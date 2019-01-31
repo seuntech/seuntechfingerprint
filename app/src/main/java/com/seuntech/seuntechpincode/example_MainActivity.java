@@ -7,6 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.seuntech.pinpad.AppConf;
+import com.seuntech.pinpad.ManagePin;
+
 public class example_MainActivity extends AppCompatActivity {
 
     ManagePin Mp;
@@ -19,7 +22,7 @@ public class example_MainActivity extends AppCompatActivity {
 
 //Initialise Managepin
         Mp = ManagePin.getInstance(this);
-        //Mp.setLogoId(R.drawable.logo);
+        Mp.setLogoId(R.drawable.android);
         //Mp.HideLogo();
         //Mp.clearPin();
         //Mp.isPinSet();

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/seuntech_keyboard_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/seuntech_first_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/seuntech_button_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/st_body"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/seuntech_button_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/st_body"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/seuntech_button_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/st_body"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seuntech_second_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seuntech_first_row"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/seuntech_button_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/st_body"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/seuntech_button_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/st_body"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/seuntech_button_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="6"
+            android:textAlignment="center"
+            android:textColor="@color/st_body"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seuntech_third_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seuntech_second_row"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/seuntech_button_7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="7"
+            android:textAlignment="center"
+            android:textColor="@color/st_body"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/seuntech_button_8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="8"
+            android:textAlignment="center"
+            android:textColor="@color/st_body"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/seuntech_button_9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="9"
+            android:textAlignment="center"
+            android:textColor="@color/st_body"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seuntech_fourth_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seuntech_third_row"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/seuntech_button_10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textColor="@color/st_body"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/seuntech_button_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/st_body"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/seuntech_button_clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/st_body"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

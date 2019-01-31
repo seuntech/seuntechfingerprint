@@ -3,9 +3,4 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="st_body">#FFFFFF</color>
-    <color name="st_warning">#AE3636</color>
-    <color name="st_success">#119E26</color>
-    <color name="st_empty_circle">#FFFFFF</color>
-    <color name="st_filed_circle">#505253</color>
 </resources>

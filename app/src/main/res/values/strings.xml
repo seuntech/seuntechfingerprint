@@ -1,13 +1,4 @@
 <resources>
     <string name="app_name">seuntech fingerprint</string>
-    <string name="st_creat_for_digit_pin">Create 4 Digit PIN</string>
-    <string name="st_enter_current_pin">Enter Current PIN</string>
-    <string name="st_confirm_pin">Confirm PIN?</string>
-    <string name="st_enter_new_pin">Enter New PIN</string>
-    <string name="st_forgot_password">Forgot Password?</string>
-    <string name="st_enterpin_tounlock">Enter PIN to unlock</string>
-    <string name="st_finger_error">Finger Print Error</string>
-    <string name="st_finger_not_match">Finger Print do not match</string>
-    <string name="st_finger_match">Finger Print Match</string>
 </resources>
 

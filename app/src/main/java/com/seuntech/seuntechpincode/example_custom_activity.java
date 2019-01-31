@@ -2,6 +2,8 @@ package com.seuntech.seuntechpincode;
 
 import android.widget.Toast;
 
+import com.seuntech.pinpad.pin_activity;
+
 /**
  * Created by seuntech on 1/29/2019.
  */
