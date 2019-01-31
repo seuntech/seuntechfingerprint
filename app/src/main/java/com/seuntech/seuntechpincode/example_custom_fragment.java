@@ -1,4 +1,4 @@
-package com.seuntech.seuntechfingerprint;
+package com.seuntech.seuntechpincode;
 
 import android.content.Intent;
 import android.widget.Toast;

@@ -1,8 +1,5 @@
-package com.seuntech.seuntechfingerprint;
+package com.seuntech.seuntechpincode;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.widget.Toast;
 
 /**

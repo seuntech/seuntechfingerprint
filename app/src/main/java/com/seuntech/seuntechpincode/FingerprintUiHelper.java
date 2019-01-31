@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package com.seuntech.seuntechfingerprint;
+package com.seuntech.seuntechpincode;
 
 import android.annotation.TargetApi;
 import android.app.KeyguardManager;

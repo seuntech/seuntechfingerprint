@@ -1,4 +1,4 @@
-package com.seuntech.seuntechfingerprint;
+package com.seuntech.seuntechpincode;
 
 import android.app.Fragment;
 import android.app.FragmentManager;

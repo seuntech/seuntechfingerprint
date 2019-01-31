@@ -1,4 +1,4 @@
-package com.seuntech.seuntechfingerprint;
+package com.seuntech.seuntechpincode;
 
 /**
  * Created by seuntech on 1/30/2019.
