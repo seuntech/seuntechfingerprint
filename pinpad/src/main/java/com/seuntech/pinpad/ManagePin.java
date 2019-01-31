@@ -50,13 +50,13 @@ public class ManagePin<T extends pin_activity> {
 
 
 
-    public long get_LastActivetime(){
+    private long get_LastActivetime(){
         Long defaultValue = 0l;
         return prefs.getLong("timeout", defaultValue);
     }
 
 
-    public void set_LastActivetime(){
+    protected void set_LastActivetime(){
         SharedPreferences.Editor editor = prefs.edit();
         editor.putLong("timeout", System.currentTimeMillis());
         editor.apply();
@@ -85,11 +85,11 @@ public class ManagePin<T extends pin_activity> {
 
 
 
-    public String getPin() {
+    protected String getPin() {
         return prefs.getString("STPIN", "u");
     }
 
-    public boolean setPin(String pin) {
+    protected boolean setPin(String pin) {
 
         String encrypted = "";
         try {
@@ -106,7 +106,7 @@ public class ManagePin<T extends pin_activity> {
     }
 
 
-    public String MyPin(String pin) {
+    protected String MyPin(String pin) {
         String encrypted = "";
         try {
             encrypted = AESUtils.encrypt(pin);

@@ -232,7 +232,7 @@ ManagePin Mp = ManagePin.getInstance(this);
 | Mp.clearPin(); | Remove PIN on logout |
 | Mp.isPinSet();  | Check if PIN is set (returns True or False) |
 |Mp.isTimeout();| check if lock has timed out, each time you call this function, it extends the lock time|
-|TIME_OUT = 600;// default ten minutes|set timeout time, NOTE this setting is only usefull if you are using isTimeout();|
+|AppConf.TIME_OUT = 600;// default ten minutes|set timeout time, NOTE this setting is only usefull if you are using isTimeout();|
 |AppConf.HIDE_BAR = true;|Touggle Action Bar|
 
 
