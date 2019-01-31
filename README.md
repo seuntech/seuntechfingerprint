@@ -18,7 +18,7 @@ Add the dependency to your build.gradle.
    }
 ```
 
-![Demo](app/src/main/res/raw/sample.gif)
+![Demo](app/src/main/res/raw/oosample.gif)
 ![GIF][demo_gif]
 
 ### Features
