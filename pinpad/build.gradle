@@ -1,5 +1,23 @@
+apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
 
+
+
+//Step II: Add the below publish details
+publish {
+
+    def groupProjectID = 'com.seuntech.seuntechpincode'
+    def artifactProjectID = 'pinpad'
+    def publishVersionID = '2.0.0'
+
+    userOrg = 'seuntech'
+    repoName = 'seuntechfingerprint'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'Access Control, Finger print, pin, pinpad'
+    website = 'http://seuntech.com'
+}
 android {
     compileSdkVersion 26
 
