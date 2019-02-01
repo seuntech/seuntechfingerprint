@@ -56,6 +56,8 @@ public abstract class pin_fragment extends Fragment implements View.OnClickListe
         //auth = 3
         managePin = ManagePin.getInstance(getActivity());
 
+        managePin.exp_LastActivetime();
+
         if (this.getArguments().getString("type") != null) {
             seuntechtype = this.getArguments().getString("type");
         }

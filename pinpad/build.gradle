@@ -8,7 +8,7 @@ publish {
 
     def groupProjectID = 'com.seuntech.seuntechpincode'
     def artifactProjectID = 'pinpad'
-    def publishVersionID = '2.0.0'
+    def publishVersionID = '2.0.1'
 
     userOrg = 'seuntech'
     repoName = 'seuntechfingerprint'

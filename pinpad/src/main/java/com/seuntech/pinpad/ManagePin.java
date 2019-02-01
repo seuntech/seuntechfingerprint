@@ -62,6 +62,13 @@ public class ManagePin<T extends pin_activity> {
         editor.apply();
     }
 
+    protected void exp_LastActivetime(){
+        SharedPreferences.Editor editor = prefs.edit();
+        Long defaultValue = 0l;
+        editor.putLong("timeout",defaultValue);
+        editor.apply();
+    }
+
 
 
     public boolean isTimeout(){

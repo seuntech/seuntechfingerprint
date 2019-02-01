@@ -62,6 +62,8 @@ public abstract class pin_activity extends AppCompatActivity implements View.OnC
 
         managePin = ManagePin.getInstance(this);
 
+        managePin.exp_LastActivetime();
+
         seuntech_button_clear = findViewById(R.id.seuntech_button_clear);
         seuntech_button_clear.setText(Html.fromHtml("&laquo;"));
 

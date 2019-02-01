@@ -13,7 +13,7 @@ Add the dependency to your build.gradle.
 
 ```
    //seuntech
-   compile 'com.seuntech.seuntechpincode:pinpad:2.0.0'
+   implementation 'com.seuntech.seuntechpincode:pinpad:2.0.1'
 ```
 
 ![Demo](app/src/main/res/raw/sample.gif)
