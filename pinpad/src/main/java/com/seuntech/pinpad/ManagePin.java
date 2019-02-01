@@ -64,7 +64,7 @@ public class ManagePin<T extends pin_activity> {
 
     protected void exp_LastActivetime(){
         SharedPreferences.Editor editor = prefs.edit();
-        Long defaultValue = 0l;
+        Long defaultValue =  System.currentTimeMillis() - (AppConf.TIME_OUT*2000);;
         editor.putLong("timeout",defaultValue);
         editor.apply();
     }
@@ -79,11 +79,13 @@ public class ManagePin<T extends pin_activity> {
         long timeout = (AppConf.TIME_OUT*1000);
         if (lastActiveMillis > 0 && passedTime >= timeout) {
 
+             //Toast.makeText(c,"true_"+String.valueOf(lastActiveMillis)+"_"+String.valueOf(passedTime),Toast.LENGTH_SHORT).show();
             return  true;
         }else {
             set_LastActivetime();
         }
 
+        //Toast.makeText(c,"false_"+String.valueOf(lastActiveMillis)+"_"+String.valueOf(passedTime),Toast.LENGTH_SHORT).show();
         return false;
     }
 

@@ -23,6 +23,7 @@ public class example_MainActivity extends AppCompatActivity {
 //Initialise Managepin
         Mp = ManagePin.getInstance(this);
         Mp.setLogoId(R.drawable.android);
+        //AppConf.TIME_OUT = 5;
         //Mp.HideLogo();
         //Mp.clearPin();
         //Mp.isPinSet();
